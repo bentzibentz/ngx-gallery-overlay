@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Thumbnail } from '../../interfaces/thumbnail';
 
 @Component({
   selector: 'lib-gallery-teaser-image',
@@ -8,7 +9,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class GalleryTeaserImageComponent implements OnInit {
 
   // TODO define thumbnail interface
-  @Input() thumbnail: any;
+  @Input() thumbnail: Thumbnail;
 
   constructor() { }
 
