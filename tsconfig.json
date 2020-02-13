@@ -17,7 +17,13 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-image-overlay": [
+        "dist/ngx-image-overlay/ngx-image-overlay",
+        "dist/ngx-image-overlay"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
