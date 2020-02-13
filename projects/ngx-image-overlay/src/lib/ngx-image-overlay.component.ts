@@ -3,11 +3,9 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'lib-ngx-image-overlay',
   template: `
-    <p>
-      ngx-image-overlay works!
-    </p>
+    <lib-gallery></lib-gallery>
   `,
-  styles: []
+  styleUrls: ['./assets/utilities.css']
 })
 export class NgxImageOverlayComponent implements OnInit {
 
