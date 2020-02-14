@@ -1,20 +1,17 @@
 export interface Thumbnail {
   alt: string;
+  title: string;
   src: string;
-  srcSet: '';
-  sizes: Array<ThumbnailSizes>;
+  srcSet?: ThumbnailSrcSet;
+  sizes?: ThumbnailSizes;
   className?: string;
 }
 
 export interface ThumbnailSrcSet {
-  alt: string;
-  src: string;
-  srcSet: '';
-  className?: string;
+  [index: number]: string;
 }
 
 
 export interface ThumbnailSizes {
-  size: string;
-  mediaCondition?: string;
+  [index: number]: string;
 }

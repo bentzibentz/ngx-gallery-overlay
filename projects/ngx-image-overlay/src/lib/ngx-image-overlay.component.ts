@@ -1,13 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Meta } from './interfaces/meta';
+import { Thumbnail } from './interfaces/thumbnail';
+import { Gallery } from './interfaces/gallery';
 
 @Component({
   selector: 'lib-ngx-image-overlay',
   template: `
-    <lib-gallery></lib-gallery>
+    <lib-gallery [thumbnail]="thumbnail" [meta]="meta" [gallery]="gallery"></lib-gallery>
   `,
-  styleUrls: ['./assets/utilities.css']
+  styleUrls: [
+    './style.css'
+  ]
 })
 export class NgxImageOverlayComponent implements OnInit {
+
+  @Input() thumbnail: Thumbnail;
+  @Input() meta: Meta;
+  @Input() gallery: Gallery;
 
   constructor() { }
 

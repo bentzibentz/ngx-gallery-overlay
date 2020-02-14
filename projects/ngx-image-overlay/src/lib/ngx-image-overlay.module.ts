@@ -4,11 +4,11 @@ import { GalleryTeaserComponent } from './component/gallery-teaser/gallery-tease
 import { GalleryComponent } from './component/gallery/gallery.component';
 import { GalleryCopyrightComponent } from './component/gallery-copyright/gallery-copyright.component';
 import { GalleryTeaserImageComponent } from './component/gallery-teaser-image/gallery-teaser-image.component';
-import { GalleryTeaserSubheadlineComponent } from './component/gallery-teaser-subheadline/gallery-teaser-subheadline.component';
-import { GalleryTeaserHeadlineComponent } from './component/gallery-teaser-headline/gallery-teaser-headline.component';
 import { GalleryTeaserControlComponent } from './component/gallery-teaser-control/gallery-teaser-control.component';
 
-
+import { OverlayModule } from '@angular/cdk/overlay';
+import { GalleryOverlayComponent } from './component/gallery-overlay/gallery-overlay.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -17,11 +17,12 @@ import { GalleryTeaserControlComponent } from './component/gallery-teaser-contro
     GalleryComponent,
     GalleryCopyrightComponent,
     GalleryTeaserImageComponent,
-    GalleryTeaserSubheadlineComponent,
-    GalleryTeaserHeadlineComponent,
-    GalleryTeaserControlComponent
+    GalleryTeaserControlComponent,
+    GalleryOverlayComponent
   ],
   imports: [
+    OverlayModule,
+    CommonModule
   ],
   exports: [NgxImageOverlayComponent]
 })

@@ -1,0 +1,71 @@
+<div class="ngIoV-w-screen ngIoV-h-screen ngIoV-overflow-x-hidden ngIoV-overflow-y-auto ngIoV-bg-gray-600 ngIoV-relative">
+
+  <div class="ngIoV-fixed ngIoV-top-0 ngIoV-w-full ngIoV-p-4 ngIoV-bg-gray-700 ngIoV-z-20">
+    <div class="ngIoV-flex ngIoV-flex-row ngIoV-flex-wrap ngIoV-justify-between">
+      <button (click)="close()" class="ngIoV-appearance-none ngIoV-border-0 ngIoV-outline-none focus--ngIoV-outline-none ngIoV-flex ngIoV-text-sm ngIoV-text-white ngIoV-flex-row ngIoV-items-center ngIoV-flex-wrap">
+        <span>
+          <svg aria-labelledby="title-5feb6e14-2c2b-4965-b7a5-d70aa1704d44" class="stroke-current" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"><title id="title-5feb6e14-2c2b-4965-b7a5-d70aa1704d44">Pfeil nach links</title><g id="m-chevron-left-5feb6e14-2c2b-4965-b7a5-d70aa1704d44"><g id="m-chevron-right-5feb6e14-2c2b-4965-b7a5-d70aa1704d44"><path id="vector-5feb6e14-2c2b-4965-b7a5-d70aa1704d44" d="M10 12L6 8l4-4" stroke-linecap="round"></path></g></g></svg>
+        </span>
+        <span>
+          Zurück zur Übersicht
+        </span>
+      </button>
+      <div class="ngIoV-flex-1">
+      </div>
+    </div>
+  </div>
+
+  <div class="ngIoV-w-full ngIoV-p-8 ngIoV-mt-16">
+
+    <div class="ngIoV-flex ngIoV-flex-row lg--ngIoV-px-24 ngIoV-mb-8">
+      <div class="ngIoV-relative lg:ngIoV-pr-24">
+        <span class="ngIoV-block ngIoV-text-base ngIoV-font-bold ngIoV-text-key-400 ngIoV-mb-0">{{gallery['images'].length}} Bilder</span>
+        <span class="ngIoV-block lg--ngIoV-text-4xl md--ngIoV-text-4xl sm--ngIoV-text-2xl ngIoV-text-white ngIoV-leading-tight">{{gallery.meta.title}}</span>
+      </div>
+    </div>
+
+    <ng-container *ngFor="let image of gallery['images']; let i = index">
+
+      <figure class="ngIoV-flex ngIoV-flex-col lg--ngIoV-flex-row ngIoV-mx-auto ngIoV-w-full lg--ngIoV-px-24">
+
+        <div class="ngIoV-relative ngIoV-flex-grow ngIoV-flex ngIoV-justify-center lg--ngIoV-flex-col ngIoV-h-full ngIoV-bg-black ngIoV-rounded">
+
+          <span class="ngIoV-block ngIoV-overflow-hidden ngIoV-max-w-full ngIoV-mx-auto ngIoV-rounded" style="width:100%;height:100%;max-height:calc((100vh - 58px) * 0.9)">
+            <span class="ngIoV-block ngIoV-relative" style="background-color:#000;padding-bottom:calc(66.66666666666666% - 0.01px);height:0;">
+              <span class="ngIoV-absolute ngIoV-top-0 ngIoV-left-0 ngIoV-w-full ngIoV-max-h-screen ngIoV-h-full">
+                <img class="ngIoV-block ngIoV-w-auto ngIoV-h-full ngIoV-mx-auto" [src]="image.url" [alt]="image.title" [title]="image.title">
+              </span>
+            </span>
+          </span>
+
+        </div>
+
+        <figcaption class="ngIoV-w-full lg--ngIoV-w-320 ngIoV-relative ngIoV-px-4 lg--ngIoV-px-8 ngIoV-py-4 lg--ngIoV-pt-0 lg--ngIoV-pt-0 ngIoV-flex-shrink-0">
+          <span class="ngIoV-text-lg md--ngIoV-text-2xl ngIoV-text-shade-base ngIoV-block ngIoV-mb-4 lg--ngIoV-mb-8 ngIoV-text-gray-400 ngIoV-leading-none">{{i + 1}} / 5</span>
+          <div class="ngIoV-block ngIoV-pr-4">
+            <p class="ngIoV-text-white">{{image.description}}</p>
+          </div>
+          <div class="ngIoV-block ngIoV-text-xs ngIoV-text-shade-base ngIoV-leading-normal">
+            <p class="ngIoV-text-white ngIoV-opacity-50">{{gallery.meta.copyright}}</p>
+          </div>
+        </figcaption>
+
+      </figure>
+
+      <div class="ngIoV-w-full lg--ngIoV-px-24">
+        <div class="ngIoV-relative ngIoV-h-px ngIoV-bg-dotted ngIoV-my-8 lg--ngIoV-my-16"></div>
+      </div>
+
+    </ng-container>
+
+    <div class="ngIoV-flex ngIoV-items-center ngIoV-justify-center ngIoV-mx-auto ngIoV-mb-16 ngIoV-relative ngIoV-w-48">
+      <button (click)="close()" class="ngIoV-rounded-full ngIoV-h-12 ngIoV-w-12 ngIoV-flex ngIoV-items-center ngIoV-justify-center ngIoV-border-white ngIoV-border ngIoV-text-white ngIoV-outline-focus ngIoV-cursor-pointer" title="Schließen">
+        <span class="ngIoV-h-8 ngIoV-flex ngIoV-justify-center ngIoV-items-center ngIoV-leading-none ngIoV-text-white ngIoV-w-8">
+          <svg aria-labelledby="title-28c23099-9832-4338-8625-f7c3682760e8" class="stroke-current" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"><title id="title-28c23099-9832-4338-8625-f7c3682760e8">Icon: schließen</title><g id="l-close-f-28c23099-9832-4338-8625-f7c3682760e8"><g id="l-close-28c23099-9832-4338-8625-f7c3682760e8"><path id="vector-28c23099-9832-4338-8625-f7c3682760e8" d="M18 18L6 6m12 0L6 18" stroke-width="2.2" stroke-linecap="round"></path></g></g></svg>
+        </span>
+      </button>
+    </div>
+
+  </div>
+
+</div>

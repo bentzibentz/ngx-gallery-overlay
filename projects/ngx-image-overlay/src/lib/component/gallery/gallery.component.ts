@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Thumbnail } from '../../interfaces/thumbnail';
+import { Meta } from '../../interfaces/meta';
+import { Gallery } from '../../interfaces/gallery';
 
 @Component({
   selector: 'lib-gallery',
@@ -6,6 +9,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./gallery.component.css']
 })
 export class GalleryComponent implements OnInit {
+
+  @Input() thumbnail: Thumbnail;
+  @Input() meta: Meta;
+  @Input() gallery: Gallery;
 
   constructor() { }
 
