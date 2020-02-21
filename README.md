@@ -1,27 +1,27 @@
-# NgxGalleryOverlay
+<h1 align="center">Angular Gallery Overlay</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.1.
+<p align="center">Add beautiful image gallery overlay to your project, inspired by the new <a href="https://www.spiegel.de/panorama/wangerooge-badestrand-nach-sturmfluten-fast-vollstaendig-weg-a-767933a5-4d9c-447b-8029-159d74b6efe2" target="_blank">spiegel magazin</a> image gallery.</p>
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+[![npm](https://img.shields.io/badge/demo-online-ed1c46.svg)](https://bentzibentz.github.io/ngx-gallery-overlay-demo/)
+[![npm](https://img.shields.io/npm/v/@ngx-image-overlay/core.svg?maxAge=2592000?style=plastic)](https://www.npmjs.com/package/ngx-image-overlay)
 
-## Code scaffolding
+<!--
+[![npm](https://img.shields.io/npm/dt/@ngx-gallery/core.svg?maxAge=2592000?style=plastic)](https://www.npmjs.com/package/@ngx-gallery/core)
+-->
+[![npm](https://img.shields.io/npm/l/express.svg?maxAge=2592000)](/LICENSE)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Docs
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- Documentation coming soon. Not production ready.
 
-## Running unit tests
+## Issues
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+If you identify any errors in this module, or have an idea for an improvement, please feel free to submit an PR.
 
-## Running end-to-end tests
+## Author
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+ **[Fabian Bentz](https://www.fabianbentz.de)**
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- [github/bentzibentz](https://github.com/bentzibentz)
