@@ -1,4 +1,4 @@
-<h1 align="center">Angular Gallery Overlay</h1>
+<h1 align="center">Angular Image Gallery Overlay</h1>
 
 <p align="center">Add beautiful image gallery overlay to your project, inspired by the new <a href="https://www.spiegel.de/panorama/wangerooge-badestrand-nach-sturmfluten-fast-vollstaendig-weg-a-767933a5-4d9c-447b-8029-159d74b6efe2" target="_blank">spiegel magazin</a> image gallery.</p>
 
