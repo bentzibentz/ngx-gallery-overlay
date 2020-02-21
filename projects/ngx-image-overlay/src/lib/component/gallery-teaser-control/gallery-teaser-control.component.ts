@@ -13,6 +13,7 @@ import { Meta } from '../../interfaces/meta';
 export class GalleryTeaserControlComponent implements OnInit {
 
   @Input() meta: Meta;
+  @Input() amount: number;
 
   constructor() { }
 

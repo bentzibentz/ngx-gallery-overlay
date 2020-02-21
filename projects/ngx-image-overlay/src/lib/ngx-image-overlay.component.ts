@@ -24,10 +24,7 @@ export class NgxImageOverlayComponent implements OnInit {
   }
 
   // TODO
-  // Sprache dynamisch nach übergebener Sprache (de_DE/de_DE_formal , en_EN/en_UK/en_US , es_ES)
-  // Anzahl der Bilder dynamisch im Button ausgeben
   // Gallery Bilder srcset
-  // Gallery Bilder Titel einblenden
   // Farbendynamisch anpassbar machen, button, text, hintergrund
   // Weiter in Componenten zerlegen
 
