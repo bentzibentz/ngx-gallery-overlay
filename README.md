@@ -5,10 +5,6 @@
 
 [![npm](https://img.shields.io/badge/demo-online-ed1c46.svg)](https://bentzibentz.github.io/ngx-gallery-overlay-demo/)
 [![npm](https://img.shields.io/npm/v/@ngx-image-overlay/core.svg?maxAge=2592000?style=plastic)](https://www.npmjs.com/package/ngx-image-overlay)
-
-<!--
-[![npm](https://img.shields.io/npm/dt/@ngx-gallery/core.svg?maxAge=2592000?style=plastic)](https://www.npmjs.com/package/@ngx-gallery/core)
--->
 [![npm](https://img.shields.io/npm/l/express.svg?maxAge=2592000)](/LICENSE)
 
 
@@ -48,6 +44,7 @@ Follow below steps to add ngx image overlay to your project
 #### 1. Import Overlay from the angular cdk
 
 You need to import the ```Overlay``` in the providers array of your app where you want to use it.
+
 You need to import the ```NgxImageOverlayModule``` in the module of your app where you want to use it.
 
 ```typescript        
@@ -89,7 +86,8 @@ In your HTML: Use the ```<lib-ngx-image-overlay>``` wherever you like in your pr
 
 #### 3. Structure of data to display the image overlay
 
-Make sure the structure of your objects should look like the objects shown below:     
+Make sure the structure of your objects should look like the objects shown below:
+   
 ```typescript
 image = {
     alt: 'Strand ohne Sand',
@@ -107,7 +105,9 @@ image = {
     ],
     className: 'yourClassName'
 };
+```
 
+```typescript
 meta = {
     copyright: 'Unsplash / Photos for everyone',
     title: 'Lorem ipsum dolor sit',
@@ -116,7 +116,9 @@ meta = {
     backLabel: 'Back to article',
     label: 'photo gallery'
 };
+```
 
+```typescript
 gallery = {
     meta: this.meta,
     images: [
