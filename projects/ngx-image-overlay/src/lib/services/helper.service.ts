@@ -11,8 +11,4 @@ export class HelperService {
     return srcSet.join();
   }
 
-  generateSizes(sizes: any) {
-    return sizes.join();
-  }
-
 }

@@ -1,8 +1,0 @@
-@import '~@angular/cdk/overlay-prebuilt.css';
-
-.cdk-overlay-backdrop.cdk-overlay-backdrop-showing {
-  &.ngIoV-backdrop {
-    background: #2f2d2b;
-    opacity: 1 !important;
-  }
-}

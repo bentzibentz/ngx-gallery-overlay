@@ -4,8 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve & ngtw watch",
-    "build": "ngtw build && ng build",
-    "build-library": "ngtw build && ng build ngx-gallery-overlay",
+    "build": "ng build",
+    "build-library": "ng build ngx-gallery-overlay",
     "pack-lib": "cd dist/ngx-image-overlay && npm pack",
     "test": "ng test",
     "lint": "ng lint",

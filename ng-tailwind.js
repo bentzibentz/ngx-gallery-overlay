@@ -19,5 +19,9 @@ module.exports = {
     '.js'
   ],
   extractors: [],
-  content: []
+  content: [
+    './projects/**/*.js',
+    './projects/**/*.html',
+    './projects/**/*.ts'
+  ]
 }
